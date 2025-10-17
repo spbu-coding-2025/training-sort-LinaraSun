@@ -23,5 +23,7 @@ int main(void) {
 		printf("%d ", numbers[i]);
 	}
 
+	printf("\n");
+
 	return 0;
 }
