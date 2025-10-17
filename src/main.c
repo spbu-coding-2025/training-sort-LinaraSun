@@ -2,12 +2,12 @@
 
 int main(void) {
 
-	int numbers[100] = {0}, count = 0;
+	int numbers[100] = {0};
+	int count = -1;
 
-	while (count < 100) {
-		scanf("%d", &numbers[count]);
+	do {
 		count++;
-	}
+	} while (scanf("%d", &numbers[count]));
 
 	int switch_num = 0;
 	for (int i = 0; i < count - 1; i++) {
@@ -21,8 +21,7 @@ int main(void) {
 	}
 
 	for (int i = 0; i < count; i++) {
-		if (numbers[i] != 0)
-			printf("%d ", numbers[i]);
+		printf("%d ", numbers[i]);
 	}
 
 	printf("\n");
