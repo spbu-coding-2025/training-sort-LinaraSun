@@ -4,7 +4,8 @@ int main(void) {
 
 	int numbers[100] = {0}, count = 0, new_num = 0;
 
-	while (scanf("%d", &numbers[count]) && count < 100) {
+	while (count < 100) {
+		scanf("%d", &numbers[count]);
 		count++;
 	}
 
