@@ -3,11 +3,11 @@
 int main(void) {
 
 	int numbers[100] = {0};
-	int count = -1;
+	int count = 0;
 
-	do {
+	while (scanf("%d", &numbers[count]) == 1 && count < 100) {
 		count++;
-	} while (scanf("%d", &numbers[count]));
+	}
 
 	int switch_num = 0;
 	for (int i = 0; i < count - 1; i++) {
